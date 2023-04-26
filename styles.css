@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  font-family: "Roboto",serif;
+  font-size: 16px;
+  color: gray;
+  line-height: 1.5rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #2F4F4F;
+  color: white;
+  padding: 24px 0;
+  margin-bottom: 24px;
+}
+
+#paragraph {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+h2,
+  legend {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding-bottom: 8px;
+    color:#2F4F4F;
+
+}
+h2 {
+  text-align: center;
+}
+fieldset {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  width: 80%;
+}
+
+label[for="name"],
+label[for="email"],
+label[for="phone"],
+label[for="address"],
+label[for="city"],
+label[for="state"],
+label[for="zip"] {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0 8px;
+}
+#CTA {
+  border-bottom: 4px solid #2F4F4F;
+  margin-bottom: 8px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+hr{
+  text-align: center;
+  border-bottom: 2px solid #2F4F4F;
+  margin:auto;
+  width: 80%;
+  margin-top: 4px;
+}
+legend {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: left;
+  padding-top: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="number"],
+select {
+    height: 3rem;
+    width: 100%;
+    border: 1px solid Silver;
+    border-radius: 6px;
+    margin-top: 12px;
+    background-color: Silver;
+    display: flex;
+    flex-direction: column;
+}
+[placeholder= "Choose State"] {
+  padding-left: 10px;
+  text-align: left;
+  padding-top: 14px;
+}
+
+input:focus,select:focus,
+textarea:focus {
+  border: 3px solid LightSlateGray;
+  border-radius: 6px;
+  transition: border .6s;
+  text-align: left;
+  padding-left: 16px;
+
+}
+
+[placeholder="Required"] {
+    padding-right: 10px;
+    text-align: right;
+}
+#zip {
+    margin-bottom: 24px;
+    width: 50%;
+}
+
+textarea {
+    height: 100px;
+    border: 1px solid Silver;
+    border-radius: 6px;
+    margin-bottom: 24px;
+    background-color: Silver;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.radio-questions {
+    padding-top: 16px;
+    padding-bottom: 8px;
+}
+.form-questions {
+  border-bottom: 2px solid LightSlateGray;
+}
+
+button {
+  color: white;
+  font-size: 18px;
+  background-color: DarkCyan;
+  border: 1px solid DarkCyan;
+  font-weight: bold;
+  border-radius: 4px;
+  width: 80%;
+  height: 48px;
+  display: block;
+  margin: auto;
+}
+button[type="submit"] {
+  align-content:center;
+}
+footer {
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 140px;
+  padding-top: 72px;
+}
+form {
+  align-content: center;
+}
+
+@media screen and (min-width:768px) {
+h1 {
+  width: 100%;
+}
+form {
+  width: 740px;
+  margin: auto;
+  display: block;
+  align-content: center;
+}
+.form-questions {
+  width: 740px;
+  margin: auto;
+  display: block;
+  align-content: center;
+}
+.second-form {
+  width: 740px;
+  margin: auto;
+  display: block;
+  align-content: center;
+}
+#CTA {
+  border-bottom: 4px solid #2F4F4F;
+  margin-bottom: 8px;
+  width: 740px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+hr {
+  text-align: center;
+  border-bottom: 2px solid #2F4F4F;
+  width: 740px;
+  margin: auto;
+  margin-top: 4px;
+}
+.radio-text {
+  padding-top: 30px;
+}
+textarea {
+    height: 100px;
+    border: 1px solid Silver;
+    border-radius: 6px;
+    margin-bottom: 24px;
+    background-color: Silver;
+    padding-top: 10px;
+    width: 740px;
+}
+button {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+button[type="submit"] {
+  align-content:center;
+  width: 740px;
+}
+}
