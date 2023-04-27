@@ -77,7 +77,7 @@ legend {
 
 input[type="text"],
 input[type="email"],
-input[type="phone"],
+input[type="tel"],
 input[type="number"],
 select {
     height: 3rem;
@@ -88,6 +88,7 @@ select {
     background-color: Silver;
     display: flex;
     flex-direction: column;
+    padding-left: 16px;
 }
 [placeholder= "Choose State"] {
   padding-left: 10px;
@@ -127,6 +128,7 @@ textarea {
 .radio-questions {
     padding-top: 16px;
     padding-bottom: 8px;
+    align-items: center;
 }
 .form-questions {
   border-bottom: 2px solid LightSlateGray;
@@ -156,6 +158,10 @@ footer {
 form {
   align-content: center;
 }
+#state {
+  padding-top: 12px;
+  padding-left: 16px;
+}
 
 @media screen and (min-width:768px) {
 h1 {
@@ -167,11 +173,15 @@ form {
   display: block;
   align-content: center;
 }
+#zip {
+    margin-bottom: 24px;
+    width: 25%;
+  }
+
 .form-questions {
   width: 740px;
   margin: auto;
   display: block;
-  align-content: center;
 }
 .second-form {
   width: 740px;
@@ -214,5 +224,28 @@ button {
 button[type="submit"] {
   align-content:center;
   width: 740px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: 8px;
+  align-items: center;
+}
+label[for="name"],
+label[for="email"],
+label[for="phone"],
+label[for="address"],
+label[for="city"],
+label[for="state"] {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8px;
+    width: 180px;
+}
+label[for="zip"]{
+  display: flex;
+  flex-direction: column;
+  margin-right: 8px;
+  width: 140px;
 }
 }
